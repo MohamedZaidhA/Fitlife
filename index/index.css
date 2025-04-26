@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    text-align: center;
+  }
+  .login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  input {
+    width: 100%;
+    padding: 10px 2px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px ;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  body {
+    background-image: url('https://imgs.search.brave.com/X07xqayd6uwE3brWgQmowqHepgmjL20wfu0GaSzIOlI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDc5ODk1/NDkuanBn');
+    background-size: cover;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

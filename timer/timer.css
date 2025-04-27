@@ -1,0 +1,44 @@
+.timer-section {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .timer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #3498db;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background: white;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .buttons button:hover {
+    background: #2980b9;
+  }
+  

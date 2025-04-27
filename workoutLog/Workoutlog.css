@@ -28,7 +28,7 @@
   }
   
   .container {
-    max-width: 500px;
+    max-width: 550px;
     margin: 50px auto;
     padding: 20px;
     background: white;
@@ -102,6 +102,34 @@
     text-align: center;
     color: #333;
   }
-  
-  
-  
+  .workout-timer-container {
+  display: flex;
+  gap: 10px; /* Space between the form and the timer */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.timer-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+#workout-form input,
+#workout-form button,
+#workout-form a {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+  width: 300px; /* Set a fixed width for the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

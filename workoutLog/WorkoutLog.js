@@ -1,3 +1,4 @@
+
 const form = document.getElementById('workout-form');
 const workoutList = document.getElementById('workout-list');
 

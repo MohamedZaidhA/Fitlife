@@ -49,3 +49,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

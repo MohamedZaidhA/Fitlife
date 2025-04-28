@@ -6,14 +6,78 @@
   <title>Fitness App</title>
   <link rel="stylesheet" href="Homepage/styles.css" />
 </head>
+<style>
+body {
+  background-image: url('img/bg5.jpg');
+  background-size: cover;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  size: 50px;
+}
+
+  .logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .logout-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+</style>
 <body>
+  <div class="logout-container">
+    <button class="logout-button" onclick="logout()">Logout</button>
+  </div>
   <div class="container">
     <h1>💪 Welcome to FitLife</h1>
-    <p>Your personal fitness tracker.</p>
-    <a href="DailyGoal.html" class="button">Daily Goal</a>
-    <a href="Workoutlog.html" class="button">Workout Log</a>
-    <a href="CalorieTracker.html" class="button">Calorie Tracker</a>
-    <a href="index.html" class="button">Logout</a>
+    <div class="gallery">
+      <div class="image-container">
+        <a href="gallary.html" target="_self">
+          <img src="img/workouts.jpg" alt="Workouts">
+          <div class="overlay">Workouts</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="DailyGoal.html" target="_self">
+          <img src="img/Dailygoals.jpeg" alt="DailyGoal">
+          <div class="overlay">Daily Goals</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="Workoutlog.html" target="_self">
+          <img src="img/fitTrack.jpg" alt="Workout Log">
+          <div class="overlay">Workout Log</div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="CalorieTracker.html" target="_self">
+          <img src="img/diet.jpg" alt="CalorieTracker">
+          <div class="overlay">Calorie counter</div>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <script>
+    function logout() {
+      alert("You have been logged out!");
+      window.location.href = "index.html"; // Redirect to the login or welcome page
+    }
+  </script>
 </body>
 </html>

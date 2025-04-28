@@ -42,13 +42,6 @@ body {
     text-align: center;
     margin-top: 1rem;
   }
-  body {
-    background-image: url('https://imgs.search.brave.com/X07xqayd6uwE3brWgQmowqHepgmjL20wfu0GaSzIOlI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDc5ODk1/NDkuanBn');
-    background-size: cover;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .signup-link {
   color: #007bff;
   text-decoration: none;

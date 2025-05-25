@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calorie Tracker</title>
+  <link rel="stylesheet" href="calorieTracker/CalorieTracker.css" />
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-image: url('img/calorie.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 50px;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍏 Calorie Tracker</h1>
+    <form id="calorie-form">
+      <input type="text" id="food" placeholder="Food Item" required />
+      <input type="number" id="calories" placeholder="Calories" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <h2>Today's Intake</h2>
+    <ul id="calorie-list"></ul>
+
+    <h3>Total Calories: <span id="total-calories">0</span> kcal</h3>
+
+    <a href="home.html" class="button back">← Back to Home</a>
+  </div>
+
+  <script>
+    const calorieForm = document.getElementById('calorie-form');
+    const calorieList = document.getElementById('calorie-list');
+    const totalCaloriesDisplay = document.getElementById('total-calories');
+
+    let totalCalories = 0;
+
+    calorieForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const food = document.getElementById('food').value;
+      const calories = parseInt(document.getElementById('calories').value);
+
+      const listItem = document.createElement('li');
+      listItem.textContent = `${food} - ${calories} kcal`;
+
+      calorieList.appendChild(listItem);
+
+      totalCalories += calories;
+      totalCaloriesDisplay.textContent = totalCalories;
+
+      calorieForm.reset();
+    });
+  </script>
+</body>
+</html>
